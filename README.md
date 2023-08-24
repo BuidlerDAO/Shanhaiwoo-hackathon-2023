@@ -2,8 +2,7 @@
 
 ## [介绍, 点我查看详情](https://www.notion.so/buidlerdao/DAO-Infra-HackerHouse-eeff60b8c16043fda3a5287ba3ac76a9)
 
-各位 Buidler 大家好，欢迎来到 Shanhaiwoo Hackerhouse，十分期待与大家线下相聚、共同创作！BuidlerDAO 与 AntaplaLab 各位伙伴将共同参与，并且我们特邀了 6 位业界顶级导师与大家分享、交流，期待大家满载而归...
-
+各位 Buidler 大家好，欢迎来到 Shanhaiwoo HackerHouse ，十分期待与大家线下相聚、共同创作！本次活动由万向区块链实验室,山海坞与 BuidlerDAO 联合主办，旨在为区块链爱好者提供一个展示才能的舞台，共同探讨区块链技术的未来发展。
 
 ## [代码提交]
 
