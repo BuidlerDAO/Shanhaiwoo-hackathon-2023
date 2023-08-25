@@ -6,7 +6,7 @@
 
 ## [代码提交]
 
-### 1. 创建你的 2023 DAO Infra HackerHouse 项目
+### 1. 创建你的 2023 Shanhaiwoo Hackerthon 项目
 
 1. 报名注册完成后，可以立即开始项目创建，fork 本代码仓库，到你们团队成员 repo 里: [https://github.com/BuidlerDAO/Shanhaiwoo-hackathon-2023]
 2. 先在 `projects` 内生成一个目录，以你们项目名称命名，里面先放个空档案，或 readme 简单介绍项目。提交一个 PR 进来。目的是预留一个目录作为你们项目空间。**注意我们会把目录改名，在项目名称前加个编号。请 pull 下来。**
