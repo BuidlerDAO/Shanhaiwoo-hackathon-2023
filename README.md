@@ -1,12 +1,12 @@
-# Shanhaiwoo-hackerhouse-2023
+# Shanhaiwoo-hackathon-2023
 
-## [介绍, 点我查看详情](https://www.notion.so/buidlerdao/DAO-Infra-HackerHouse-eeff60b8c16043fda3a5287ba3ac76a9)
+## [介绍, 点我查看详情](https://www.notion.so/buidlerdao/2023-4cfeeb98edb04856993a8028352524f8?pvs=4)
 
-各位 Buidler 大家好，欢迎来到 Shanhaiwoo HackerHouse ，十分期待与大家线下相聚、共同创作！本次活动由万向区块链实验室,山海坞与 BuidlerDAO 联合主办，旨在为区块链爱好者提供一个展示才能的舞台，共同探讨区块链技术的未来发展。
+各位 Buidler 大家好，欢迎来到 Shanhaiwoo Hackathon，十分期待与大家线下相聚、共同创作！本次活动由万向区块链实验室,山海坞与 BuidlerDAO 联合主办，旨在为区块链爱好者提供一个展示才能的舞台，共同探讨区块链技术的未来发展。
 
 ## [代码提交]
 
-### 1. 创建你的 2023 Shanhaiwoo Hackerthon 项目
+### 1. 创建你的 2023 Shanhaiwoo Hackathon 项目
 
 1. 报名注册完成后，可以立即开始项目创建，fork 本代码仓库，到你们团队成员 repo 里: [https://github.com/BuidlerDAO/Shanhaiwoo-hackathon-2023]
 2. 先在 `projects` 内生成一个目录，以你们项目名称命名，里面先放个空档案，或 readme 简单介绍项目。提交一个 PR 进来。目的是预留一个目录作为你们项目空间。**注意我们会把目录改名，在项目名称前加个编号。请 pull 下来。**
@@ -27,8 +27,8 @@
 
 4. 推送最终PR的分支，建议以项目命名， 且只可修改本团队项目目录内容。
 
-5. 请在 `2023年8月26日上午12:00` 前，初始化团队项目目录。
+5. 请在 `2023年8月26日上午12:00` (北京时区）前，初始化团队项目目录。
 
-6. 最终PR，在 `2023年8月29日上午12:00` 前提交，且各团队自己发起MR请求。
+6. 最终PR，在 `2023年8月28日上午12:00` （北京时区）前提交，且各团队自己发起MR请求。
 
 7. [项目参考模块,点我查看详情](./projects/00-proj-template/README.md)
