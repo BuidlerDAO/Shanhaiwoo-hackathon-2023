@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PinTravel</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.2/dist/web3.min.js"></script>
+
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                isLoading: true,
+                scenes: [],
+                sbts: [],
+            },
+            mounted() {
+                this.getScenes();
+            },
+            methods: {
+                getScenes() {
+                    this.isLoading = true;
+                    axios.get("https://api.pintravel.com/scenes")
+                        .then((response) => {
+                            this.scenes = response.data;
+                            this.isLoading = false;
+                        })
+                        .catch((error) => {
+                            console.log(error);
+                            this.isLoading = false;
+                        });
+                },
+                takePhoto(scene) {
+                    const camera = new Camera();
+
+                    // 拍照
+                    camera.takePicture((image) => {
+                        // 获取地理位置
+                        const location = navigator.geolocation.getCurrentPosition();
+
+                        // 生成 SBT 纪念证明
+                        const sbt = new SBT({
+                            image,
+                            location,
+                            sceneId: scene.id,
+                        });
+
+                        // 将 SBT 保存到链上
+                        const web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID"));
+                        web3.eth.sendTransaction(sbt.encode(), (err, txHash) => {
+                            if (err) {
+                                console.log(err);
+                            } else {
+                                console.log("SBT 发送成功，交易哈希：", txHash);
+                            }
+                        });
+
+                        // 将 SBT 添加到本地列表
+                        this.sbts.push(sbt);
+                    });
+                },
+            },
+        });
+    </script>
+</body>
+</html>
+
+
